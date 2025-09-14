@@ -124,7 +124,7 @@ public class ArrayListMinPQTest {
 		assertEquals("test", pq.deleteMin());
 		assertEquals("this", pq.deleteMin());
 		assertEquals("work", pq.deleteMin());
-		assertNull("Expected null, because queue is empty",pq.deleteMin());
+		assertNull(pq.deleteMin(),"Expected null, because queue is empty");
 		points += 2;
 	}
 
